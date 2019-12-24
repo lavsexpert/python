@@ -18,7 +18,8 @@
 </head>
 <body>
 </body>
-</html>```
+</html>
+```
 
 В итоге создался файл index.html с содержимым:
 ```<html>
@@ -26,6 +27,7 @@
 </head>
 <body>
 </body>
-</html>```
+</html>
+```
 
 [Назад](https://github.com/lavsexpert/python/)
