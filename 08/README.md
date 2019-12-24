@@ -6,3 +6,5 @@
 - Писали асинхронность используя процессы(multiprocessing)
 - Работали с пулами(pool) и футурами(future)
 - Работали с библиотекой asyncio
+
+[Назад](https://github.com/lavsexpert/python/)

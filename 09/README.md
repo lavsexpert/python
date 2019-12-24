@@ -5,3 +5,5 @@
 - Установка модулей используя pip
 - Разработка на python под Android
 - Конулись работы с pdf-файлами
+
+[Назад](https://github.com/lavsexpert/python/)

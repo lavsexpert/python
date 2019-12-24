@@ -7,3 +7,5 @@
 - Полиморфизм
 - Наследование
 - Инкапсуляция
+
+[Назад](https://github.com/lavsexpert/python/)

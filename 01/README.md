@@ -8,3 +8,5 @@
 - Цикл for in
 - Функции
 - Использование модулей
+
+[Назад](https://github.com/lavsexpert/python/)
