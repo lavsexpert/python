@@ -12,20 +12,20 @@
 Когда ввёл пустую строку, то создаётся файл.
 
 Например, пользователь написал
-`Введите:>index.html
+```Введите:>index.html
 <html>
 <head>
 </head>
 <body>
 </body>
-</html>`
+</html>```
 
 В итоге создался файл index.html с содержимым:
-`<html>
+```<html>
 <head>
 </head>
 <body>
 </body>
-</html>`
+</html>```
 
 [Назад](https://github.com/lavsexpert/python/)
