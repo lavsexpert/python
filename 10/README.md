@@ -8,7 +8,12 @@
 
 [https://trello.com/](https://trello.com/)
 
-- Начало проектирования проекта
+- Начало проектирования проекта.
+
+Заведена доска в Trello: https://trello.com/b/EGcbEZ8r/python
+
+Заведен проект на GitHub: https://github.com/synergy-python/python-course
+
 - Самостоятельная задача:
 
 Пользователь вводит несколько строк текста
