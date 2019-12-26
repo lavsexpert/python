@@ -10,3 +10,4 @@
 - [Занятие 8. Асинхронность](https://github.com/lavsexpert/python/tree/master/08)
 - [Занятие 9. Форматы файлов для обмена.](https://github.com/lavsexpert/python/tree/master/09)
 - [Занятие 10. Сервисы GitHub и Trello](https://github.com/lavsexpert/python/tree/master/10)
+- [Занятие 11. Создание HTTP-сервера с HTML-страницами](https://github.com/lavsexpert/python/tree/master/11)

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>Обратная связь</title>
+</head>
+<body>
+	<h1>Обратная связь</h1>
+	<a href="/">Главная</a>
+	<a href="/news">Новости</a>
+	<a href="/support">Обратная связь</a>
+	<br>
+	<br>
+	{answer}
+	<br>
+	<form action="/email" method="post">
+		<input name="email" placeholder="Введите e-mail:" type="email"/>
+		<textarea name="message"></textarea>
+		<button type="submit">Отправить</button>
+	</form>
+</body>
+</html>
