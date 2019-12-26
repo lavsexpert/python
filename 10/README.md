@@ -1,8 +1,19 @@
 # Занятие 10. Сервисы GitHub и Trello
 
-- GitHub
-- Trello
-- Начало проектирования проекта
+- GitHub – сервис для хранения кода и командной разработки
+
+[https://github.com/](https://github.com/)
+
+- Trello - сервис для планирования работ и задач
+
+[https://trello.com/](https://trello.com/)
+
+- Начало проектирования проекта.
+
+Заведена доска в Trello: https://trello.com/b/EGcbEZ8r/python
+
+Заведен проект на GitHub: https://github.com/synergy-python/python-course
+
 - Самостоятельная задача:
 
 Пользователь вводит несколько строк текста
