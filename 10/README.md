@@ -1,7 +1,9 @@
 # Занятие 10. Сервисы GitHub и Trello
 
-- GitHub
-- Trello
+- GitHub – сервис для хранения кода и командной разраотки
+[https://github.com/](https://github.com/)
+- Trello - сервис для планирования работ и задач
+[https://trello.com/](https://trello.com/)
 - Начало проектирования проекта
 - Самостоятельная задача:
 
