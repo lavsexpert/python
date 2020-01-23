@@ -1,0 +1,28 @@
+// Создание таблицы
+CREATE TABLE oldtable(
+col1 INTEGER,
+col2 FLOAT,
+col3 DATE,
+col4 CHAR(50),
+col5 type,
+col6 type,
+PRIMARY KEY (col1),
+);
+
+DROP TABLE oldtable  				// Удаление таблицы
+
+RENAME TABLE oldtable TO newtable 	// Переименование таблицы
+
+INSERT INTO newtable 				// Добавление всех значений
+VALUES(value1, value2, )
+
+// Добавление значений в указанные колонки
+INSERT INTO newtable (col1, col3, col5)
+VALUES (value1, value3, value5)
+//value1, NULL, value3, NULL, value5, NULL
+
+DELETE FROM newtable				// Удаление всех данных таблицы
+
+SELECT * FROM newtable				// Получение всех данных
+
+SELECT col1, col3, col23 FROM newtable // Получение указанных колонок
