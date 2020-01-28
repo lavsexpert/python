@@ -11,3 +11,5 @@
 - [Занятие 9. Форматы файлов для обмена.](https://github.com/lavsexpert/python/tree/master/09)
 - [Занятие 10. Сервисы GitHub и Trello](https://github.com/lavsexpert/python/tree/master/10)
 - [Занятие 11. Создание HTTP-сервера с HTML-страницами](https://github.com/lavsexpert/python/tree/master/11)
+- [Занятие 12. Решение задач связанных с банком](https://github.com/lavsexpert/python/tree/master/12)
+- [Занятие 13. Начало работы с SQLite](https://github.com/lavsexpert/python/tree/master/13)
