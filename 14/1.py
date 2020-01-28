@@ -31,6 +31,7 @@ cursor.execute("""
     INSERT INTO cur
     VALUES(?,?,?)""",("Йена", 60.5, 100.0))
 
+print("Валюта - Курс - Кратность")
 cursor.execute("SELECT * FROM cur")
 cur = cursor.fetchall()
 for item in cur:
