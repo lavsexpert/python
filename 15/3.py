@@ -54,7 +54,7 @@ for item in cur:
 
 
 cursor.execute("""
-SELECT COUNT(students.name), students.name, faculty.name
+SELECT COUNT(students.name), faculty.name
 FROM students
 LEFT JOIN faculty 
 ON students.facultyId = faculty.id
@@ -62,4 +62,4 @@ GROUP BY faculty.name
 """)
 cur = cursor.fetchall()
 for item in cur:
-    print(item[0], "-", item[1], "-", item[2])
+    print(item[0], "-", item[1])
