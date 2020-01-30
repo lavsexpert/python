@@ -63,8 +63,19 @@ LEFT JOIN details
 ON orders.number = details.number) 
 LEFT JOIN goods
 ON details.goodsId = goods.id
-WHERE orders.number = 1
+ORDER BY details.id
 """)
 cur = cursor.fetchall()
 for item in cur:
     print(item[0], "-", item[1], "-", item[2])
+
+cursor.execute("""
+SELECT *
+FROM orders
+LEFT JOIN details 
+ON orders.number = details.number
+ORDER BY details.id
+""")
+cur = cursor.fetchall()
+for item in cur:
+    print(item[0], "-", item[1], "-", item[2], "-", item[3], "-", item[4], "-", item[5], "-", item[6], "-", item[7])
