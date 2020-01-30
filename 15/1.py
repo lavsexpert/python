@@ -34,15 +34,16 @@ for item in goods:
 
 id = 0
 for order in range(10):
+    total = 0
     for detail in range(random.randint(1,5)):
         id += 1
         count = random.randint(1,10)
         item = random.randint(1,5)
+        total += count*prices[item-1]
         cursor.execute("""
             INSERT INTO details
             VALUES(?,?,?,?,?)""", (id, order, item, count, count*prices[item-1]))
 
-    total = 0;
     cursor.execute("""
         INSERT INTO orders
         VALUES(?,?,?)""", (order, datetime.datetime.today(), total))
@@ -55,4 +56,15 @@ print(cursor.fetchall())
 cursor.execute("SELECT * FROM details")
 print(cursor.fetchall())
 
-
+cursor.execute("""
+SELECT goods.name, details.amount, details.sum
+FROM (orders
+LEFT JOIN details 
+ON orders.number = details.number) 
+LEFT JOIN goods
+ON details.goodsId = goods.id
+WHERE orders.number = 1
+""")
+cur = cursor.fetchall()
+for item in cur:
+    print(item[0], "-", item[1], "-", item[2])
