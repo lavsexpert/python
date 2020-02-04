@@ -42,6 +42,7 @@ cursor.execute("""
     INSERT INTO students
     VALUES(?,?,?)""", (5, 3, students[4]))
 
+print("Студенты по факультетам:")
 cursor.execute("""
 SELECT students.name, faculty.name
 FROM students
@@ -52,13 +53,37 @@ cur = cursor.fetchall()
 for item in cur:
     print(item[0], "-", item[1])
 
+print("")
+print("Количество студентов на каждом факультете:")
+cursor.execute("""
+SELECT faculty.name, COUNT(students.name)
+FROM students
+LEFT JOIN faculty 
+ON students.facultyId = faculty.id
+GROUP BY faculty.name
+""")
+cur = cursor.fetchall()
+for item in cur:
+    print(item[0], "-", item[1])
 
+print("")
+print("Количество студентов на каждом факультете с перечнем кто на каком:")
+# В этом запросе используется оператор UNION, который мы ещё не изучали
+# Оператор UNION добавляет в список строк одного запроса список строк другого запроса
+# При этом у запросов должно быть одинаковое количество полей
+# И в конце запроса, благодаря ORDER BY объединенные строки выстраиваются как нам нужно
 cursor.execute("""
 SELECT COUNT(students.name), faculty.name
 FROM students
 LEFT JOIN faculty 
 ON students.facultyId = faculty.id
 GROUP BY faculty.name
+UNION
+SELECT faculty.name, students.name
+FROM students
+LEFT JOIN faculty 
+ON students.facultyId = faculty.id
+ORDER BY faculty.name
 """)
 cur = cursor.fetchall()
 for item in cur:
