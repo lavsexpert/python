@@ -14,3 +14,4 @@
 - [Занятие 12. Решение задач связанных с банком](https://github.com/lavsexpert/python/tree/master/12)
 - [Занятие 13. Начало работы с SQLite](https://github.com/lavsexpert/python/tree/master/13)
 - [Занятие 14. Продолжаем изучать SQLite](https://github.com/lavsexpert/python/tree/master/14)
+- [Занятие 15. Продолжаем изучать SQLite](https://github.com/lavsexpert/python/tree/master/15)
