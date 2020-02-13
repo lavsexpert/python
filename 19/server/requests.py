@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler
+import subprocess
 
 class RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -9,6 +10,8 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.set_headers('image/*,image/jpeg,image/png')
             file = open("../client" + path, 'rb')
             self.get_content(file, file.read())
+        #elif path.find(".py"):
+        #    subprocess.Popen(path.split("?")[0], shell=True)
         else:
             self.set_headers('text/html')
             try:
