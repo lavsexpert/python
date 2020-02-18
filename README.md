@@ -16,3 +16,6 @@
 - [Занятие 14. SQLite: фильтры, группировка, сортировка](https://github.com/lavsexpert/python/tree/master/14)
 - [Занятие 15. SQLite: соединение таблиц](https://github.com/lavsexpert/python/tree/master/15)
 - [Занятие 16. SQLite: ключи и большая задача](https://github.com/lavsexpert/python/tree/master/16)
+- [Занятие 17. Модули datatime и collections](https://github.com/lavsexpert/python/tree/master/16)
+- [Занятие 18. Задача по созданию сервера(клиент и сервер)](https://github.com/lavsexpert/python/tree/master/18)
+- [Занятие 19. Задача по созданию сервера(база данных) + модуль os](https://github.com/lavsexpert/python/tree/master/19)
