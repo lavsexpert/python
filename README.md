@@ -23,4 +23,5 @@
 - [Занятие 21. Django. Установка, первоначальная настройка, URL, модели, база данных, панель администратора](https://github.com/lavsexpert/python/tree/master/21)
 - [Занятие 22. Django. Представления, шаблоны, работа с API, пространства URL](https://github.com/lavsexpert/python/tree/master/22)
 - [Занятие 23. Django. Настройка панели администратора и шаблонов страниц](https://github.com/lavsexpert/python/tree/master/23)
+- [Занятие 24. Django. Решение проблем в views, добавление стилей и картинок](https://github.com/lavsexpert/python/tree/master/24)
 
