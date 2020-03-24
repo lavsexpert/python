@@ -124,8 +124,24 @@ app/templates/app/<имя файла>.html
     <p>{{ item.news_text }}</p>
 {% endfor %}
 
+18.Для работы с исключением 404 в views используются:
+Для вызова исключения:
+from django.http import Http404
+raise Http404("Текст сообщения пользователю")
+Для получения объекта, который может быть исключением 404:
+object = get_object_or_404(Модель, pk=ПервичныйКлюч)
+или для списков
+list = get_list_or_404(Модель, pk=ПервичныйКлюч)
 
-
+19.Для избавления от "хардкода" в шаблонах используются имена из urls.py
+Например, в urls.py:
+...
+    path('<int:question_id>/detail/', views.detail, name='vote'),
+...
+Тогда в шаблоне можно изменить ссылку:
+<a href="/vote/{{ question.id }}/">Ссылка</a>
+на
+<a href="{% url 'detail' question.id %}/">Ссылка</a>
 
 
 
