@@ -40,11 +40,25 @@ INSTALLED_APPS = [
 БАЗА ДАННЫХ И МОДЕЛИ
 
 5.Настороить базу данных в project/settings.py (можно оставить настройки по-умолчанию)
+Например:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 6.Запустить общую миграцию для создания базы данных:
 python manage.py migrate
 
 7.Создать модель базы данных для приложения в файле app/models.py
+Например:
+from django.db import models
+class News(models.Model):
+    objects = models.Manager()
+    news_title = models.CharField(max_length=50)
+    news_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('Дата публикации')
 
 8.Запустить миграцию данных для приложения:
 python manage.py makemigrations app
