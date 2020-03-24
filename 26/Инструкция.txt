@@ -86,14 +86,43 @@ http://127.0.0.1:8000/admin/
 Где при первом входе надо будет ввести логин и пароль созданные ранее.
 
 14.Для добавления приложения в админку нужно добавить строку в файл app/admin.py
-admin.site.register(Имя модели)
+Например: 
+from django.contrib import admin
+from .models import News
+admin.site.register(News)
 
 ПРЕДСТАВЛЕНИЯ
 
-15.Для добавления представлений используется app/views.py, а для их вызовов app/urls.py
+15.Для добавления представлений используется app/views.py
+Например:
+from django.http import HttpResponse
+from django.template import loader
+from .models import News
+def news(request):
+    latest_news_list = News.objects.order_by('-pub_date')[:5]
+    template = loader.get_template('news/index.html')
+    context = {
+        'latest_news_list': latest_news_list,
+    }
+    return HttpResponse(template.render(context, request))
 
-16.Шаблоны для представлений распологаются в папке:
+16.Для вызовов представлений app/urls.py
+Например
+from django.urls import path
+from . import views
+app_name = 'app'
+urlpatterns = [
+    # /news/
+    path('', views.index, name='index'),
+]
+
+17.Шаблоны для представлений распологаются в папке:
 app/templates/app/<имя файла>.html
+Например:
+{% for item in latest_news_list %}
+    <h1>{{ item.news_title }}</h1>
+    <p>{{ item.news_text }}</p>
+{% endfor %}
 
 
 
