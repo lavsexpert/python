@@ -3,54 +3,82 @@
 ОСНОВЫ
 
 1.Настроить представление в app/views.py
+Например:
+from django.http import HttpResponse
+def index(request):
+  return HttpRequest("Hello, world")
 
 2.Настроить перенаправление, создав и заполнив файл app/urls.py
-А потов добавив ссылку на этот файл в project/urls.py
+Например:
+from django.urls import path
+from . import views
+urlpatterns = [
+  path('', views.index, name='index'),
+]
 
-3.Активировать приложение project/settings.py добавив <app>.apps.<App>Config в INSTALLED_APPS
+3.А потов добавив ссылку на этот файл в project/urls.py
+Например:
+from django.contrib import admin
+from django.urls import include, path
+urlpatterns = [
+  path('app/', include('app.urls')),
+  path('admin/', admin.site.urls),
+]
+
+4.Активировать приложение project/settings.py добавив <app>.apps.<App>Config в INSTALLED_APPS
+Например:
+INSTALLED_APPS = [
+    'news.apps.NewsConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
 
 БАЗА ДАННЫХ И МОДЕЛИ
 
-4.Настороить базу данных в project/settings.py (можно оставить настройки по-умолчанию)
+5.Настороить базу данных в project/settings.py (можно оставить настройки по-умолчанию)
 
-5.Запустить общую миграцию для создания базы данных:
+6.Запустить общую миграцию для создания базы данных:
 python manage.py migrate
 
-6.Создать модель базы данных для приложения в файле app/models.py
+7.Создать модель базы данных для приложения в файле app/models.py
 
-7.Запустить миграцию данных для приложения:
+8.Запустить миграцию данных для приложения:
 python manage.py makemigrations app
 При этом будет выведен результат, в котором будет указан ID приложения, например 0001
 
-8.Можете посмотреть, какие сформировались таблицы, используя:
+9.Можете посмотреть, какие сформировались таблицы, используя:
 python manage.py sqlmigrate app 0001 
 
-9.Запустить ещё одну миграцию, чтобы обновить изменения в базе данных:
+10.Запустить ещё одну миграцию, чтобы обновить изменения в базе данных:
 python manage.py migrate
 
-10.Если хотите поработать с моделью напрямую из консоли, можно вызвать
+11.Если хотите поработать с моделью напрямую из консоли, можно вызвать
 python manage.py shell
 
 АДМИНКА
 
-11.Для работы с админкой нужно создать суперпользователя:
+12.Для работы с админкой нужно создать суперпользователя:
 python manage.py createsuperuser
 Далее нужно будет ввести имя пользователя, e-mail и пароль.
 Если пароль слишком простой будет предложено его изменить или принять(y) указанный.
 
-12.Для перехода в админку нужно будет запустить сервер(python manage.py runserver) 
+13.Для перехода в админку нужно будет запустить сервер(python manage.py runserver) 
 И перейти по адресу:
 http://127.0.0.1:8000/admin/
 Где при первом входе надо будет ввести логин и пароль созданные ранее.
 
-13.Для добавления приложения в админку нужно добавить строку в файл app/admin.py
+14.Для добавления приложения в админку нужно добавить строку в файл app/admin.py
 admin.site.register(Имя модели)
 
 ПРЕДСТАВЛЕНИЯ
 
-14.Для добавления представлений используется app/views.py, а для их вызовов app/urls.py
+15.Для добавления представлений используется app/views.py, а для их вызовов app/urls.py
 
-15.Шаблоны для представлений распологаются в папке:
+16.Шаблоны для представлений распологаются в папке:
 app/templates/app/<имя файла>.html
 
 
