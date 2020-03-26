@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Товары</title>
+</head>
+<body>
+<form>
+    {% for item in goods_list %}
+    <h1>{{ item.name }}</h1>
+    <p>Цена: {{ item.price }}</p>
+    <p>На складе: {{ item.count }}</p>
+    <p>Купить количество: <input type="number" value="1"></p>
+    {% endfor %}
+    <input type="submit" value="Заказать">
+</form>
+</body>
+</html>
