@@ -28,6 +28,6 @@
 - [Занятие 26. Django. Инструкция по созданию проектов и приложений](https://github.com/lavsexpert/python/tree/master/26)
 - [Занятие 27. Django. Создание приложения новости и приложения товары](https://github.com/lavsexpert/python/tree/master/27)
 - [Занятие 28. Django. Доработка приложения товары](https://github.com/lavsexpert/python/tree/master/28)
-- [Занятие 29. Django. Доработка приложения товары и задание по списку фильмов](https://github.com/lavsexpert/python/tree/master/29)
+- [Занятие 29. Django. Корзина и заказ в приложении товары. Задание по списку фильмов](https://github.com/lavsexpert/python/tree/master/29)
 
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+</head>
+<body>
+{% for item in basket_list %}
+    <h1>{{ item.name }}</h1>
+    <p>Цена: {{ item.price }}</p>
+    <p>Количество: {{ item.count }}</p>
+    <p>Сумма: {{ item.total }}</p>
+{% endfor %}
+<h1>Итого: {{ sum }}</h1>
+<form action = "result">
+<input type="submit" value="Купить"></p>
+</form>
+<form action = "cancel">
+<input type="submit" value="Отменить"></p>
+</form>
+</body>
+</html>
