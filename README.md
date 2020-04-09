@@ -26,4 +26,6 @@
 - [Занятие 24. Django. Решение проблем в views, добавление стилей и картинок](https://github.com/lavsexpert/python/tree/master/24)
 - [Занятие 25. Django. Первое дистанционное занятие, самостоятельная работа](https://github.com/lavsexpert/python/tree/master/25)
 - [Занятие 26. Django. Инструкция по созданию проектов и приложений](https://github.com/lavsexpert/python/tree/master/26)
+- [Занятие 27. Django. Создание приложения новости и приложения товары](https://github.com/lavsexpert/python/tree/master/27)
+- [Занятие 28. Django. Доработка приложения товары](https://github.com/lavsexpert/python/tree/master/28)
 
