@@ -5,8 +5,18 @@
     <title>{{ film.name }} ({{ film.year }})</title>
 </head>
 <body>
+    <img src="{{ film.image }}"/>
     <h1>{{ film.name }} ({{ film.year }})</h1>
     <p>{{ film.text }}</p>
     <p>Рейтинг: {{ film.rating }}</p>
+    <form action="{% url 'films:vote' film.id %}" method="post">
+        {% csrf_token %}
+        {% for i in range %}
+            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ forloop.counter }}"/>
+            <label for="choice{{ forloop.counter }}">{{ forloop.counter }}</label>
+        {% endfor %}
+        <input type="submit" value="Проголосовать">
+    </form>
+</form>
 </body>
 </html>
