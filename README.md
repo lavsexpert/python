@@ -31,4 +31,5 @@
 - [Занятие 29. Django. Корзина и заказ в приложении товары. Задание по списку фильмов](https://github.com/lavsexpert/python/tree/master/29)
 - [Занятие 30. Django. Самостоятельная работа - список фильмов](https://github.com/lavsexpert/python/tree/master/30)
 - [Занятие 31. Django. Парсинг сайтов и работа с командной строкой](https://github.com/lavsexpert/python/tree/master/31)
+- [Занятие 32. Django. Доработка парсинга сайтов и работа с командной строкой](https://github.com/lavsexpert/python/tree/master/32)
 
