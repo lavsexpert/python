@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework.generics import ListAPIView
 
-# Create your views here.
+from parse.models import Comp
+from parse.serializers import CompSerializer
+
+
+class ParseView(ListAPIView):
+    queryset = Comp.objects.all()
+    serializer_class = CompSerializer
