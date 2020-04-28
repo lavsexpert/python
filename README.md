@@ -32,4 +32,5 @@
 - [Занятие 30. Django. Самостоятельная работа - список фильмов](https://github.com/lavsexpert/python/tree/master/30)
 - [Занятие 31. Django. Парсинг сайтов и работа с командной строкой](https://github.com/lavsexpert/python/tree/master/31)
 - [Занятие 32. Django. Создание REST API и доработка парсинга](https://github.com/lavsexpert/python/tree/master/32)
+- [Занятие 33. Создание интеллектуального чат-бота](https://github.com/lavsexpert/python/tree/master/33)
 
